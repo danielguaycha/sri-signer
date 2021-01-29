@@ -4,7 +4,7 @@ const path = require('path');
 const JAR = path.join(__dirname, 'src', 'DetzSigner.jar');
 
 // signXML form file
-function signXML(XMLFile, P12File, PWP12, OUTPUTXML='firmado') {
+function signXML(XMLFile, P12File, PWP12, OutputXML='signed') {
     return new Promise((resolve, reject) => {
 
         //fileexist
@@ -12,7 +12,7 @@ function signXML(XMLFile, P12File, PWP12, OUTPUTXML='firmado') {
         if(!existsFile(P12File)) reject('.P12 file not found');
 
         // comamnd
-        const command = `java -jar ${JAR} ${XMLFile} ${P12File} ${PWP12} ${OUTPUTXML}`;
+        const command = `java -jar ${JAR} ${XMLFile} ${P12File} ${PWP12} ${OutputXML}`;
         exec(command, function(err, result, stderr){
 
             if(err) { reject(getMessages(err).msg);}

@@ -16,5 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "child_process": "^1.0.2"
-  }
+  },
+  "homepage": "https://blog.dguaycha.com/2021/01/25/firmado-electronico-node-sri/"
 }

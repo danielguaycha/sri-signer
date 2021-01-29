@@ -54,7 +54,7 @@ La función `signXML` tiene como base los siguientes parámetros
 | `XMLFile`   | `String`: Especifica la ruta del archivo XML que se desea firmar, siguiendo la estructura valida expedida por el SRI | SI        |
 | `P12File`   | `String `: Comprende la ruta del archivo en formato `.p12` emitido por la entidad certificante | SI        |
 | `PWP12`     | `String`: Hace referencia a la contraseña expedida por entidad certificante | SI        |
-| `OUTPUTXML` | `String` : La ruta de salida del archivo firmado, `default = ''` | NO        |
+| `OutPutXML` | `String`: La ruta de salida del archivo firmado, `default =''` | NO        |
 
 Se recomienda validar la firma y su respectiva clave como el [Facturador Gratuito](https://www.sri.gob.ec/web/guest/herramienta-de-comprobantes-electronicos) expedido por el SRI , con el fin de evitar conflictos en contraseña y archivo .p12.  
 
